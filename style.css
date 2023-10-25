@@ -1,9 +1,28 @@
-.dark-mode {
+.background {
     background-color: #f8f9fa;
     color: black;
+}
+
+.dark-mode {
+    background-color: #212529;
+    color: white;
 }
 
 .container {
     max-width: 90%;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #212529;
+    color: white;
+}
