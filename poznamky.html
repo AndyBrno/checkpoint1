@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
-<body class="background">
+<body class="dark-mode">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -23,13 +23,13 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Domov</a>
+                    <a class="nav-link" aria-current="page" href="index.html">Domov</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="kalendar.html">Kalendár</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="poznamky.html">Poznámky</a>
+                    <a class="nav-link active" href="poznamky.html">Poznámky</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -45,6 +45,92 @@
         </div>
     </div>
 </nav>
+
+<div class="text-center">
+    <h1 class="py-3 poznamky-mode">Všetky poznámky a myšlienky na jednom mieste!</h1>
+</div>
+
+<div class="row">
+    <div class="col-4 fixed-position">
+        <h3 class="text-center background py-3">Kategórie:</h3>
+        <div id="list-example" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#list-item-1">Práca</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">Škola</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">Domácnosť</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-5">Nákupy</a>
+            <a class="list-group-item list-group-item-action text-center" href="#"><strong>+ PRIDAŤ KATEGÓRIU +</strong></a>
+            <a class="list-group-item list-group-item-action text-center" href="#"><strong>+ PRIDAŤ POZNÁMKU +</strong></a>
+            <a class="list-group-item list-group-item-action text-center" href="#"><strong>- ODSTRÁNIŤ KATEGÓRIU -</strong></a>
+            <a class="list-group-item list-group-item-action text-center" href="#"><strong>- ODSTRÁNIŤ POZNÁMKU -</strong></a>
+        </div>
+    </div>
+
+    <div class="col-4"></div>
+
+    <div class="col-8 text-center">
+        <h3 class="background py-3">Poznámky:</h3>
+        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+            <div class="row justify-content-around">
+                <h4 id="list-item-1" class="my-2 poznamky-mode">Práca</h4>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Nápady na nový projekt</h5>
+                        <p class="card-text text-left">Projekt: Vytvorenie webovej stránky pre miestnu charitu<br>Záznamy z brainstormingu o dizajne a obsahu</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-around">
+                <h4 id="list-item-2" class="my-2 poznamky-mode">Škola</h4>
+            </div>
+
+            <div class="row justify-content-around">
+                <h4 id="list-item-3" class="my-2 poznamky-mode">Domácnosť</h4>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Nákupný zoznam</h5>
+                        <p class="card-text text-left">Mlieko<br>Chlieb<br>Vajcia<br>Jablká<br>Poháre na kávu</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title p">Narodeninové darčeky</h5>
+                        <p class="card-text text-left">Kniha od obľúbeného autora<br>Darčekový poukaz do obľúbenej kaviarne<br>Personalizovaný magnetický náramok</p>
+                    </div>
+                </div>
+            </div>
+
+            <h4 id="list-item-5" class="my-2 poznamky-mode">Recepty</h4>
+            <div class="row justify-content-around">
+                <div class="card my-3" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Domáca pizza</h5>
+                        <p class="card-text text-left">
+                            Ingrediencie: cesto, paradajková omáčka, syr, šunka, olivy<br>
+                            Postup: Rozvaliť cesto, natrieť omáčkou, pridať náplň a piecť
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card my-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Thajská červená kari pasta</h5>
+                        <p class="card-text text-left">
+                            Ingrediencie: kurčačie prsia, kokosové mlieko, červená kari pasta, zelenina<br>
+                            Postup: Upratajte kurčačie prsia, pridajte kari pastu, zeleninu a servírujte s ryžou
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div>
+    <h1 class="py-3 poznamky-mode"></h1>
+</div>
 
 <footer class="footer">
     <div>
